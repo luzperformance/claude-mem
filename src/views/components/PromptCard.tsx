@@ -1,6 +1,6 @@
 import React from 'react';
-import { UserPrompt } from '../types';
-import { formatDate } from '../utils/formatters';
+import { UserPrompt } from '../../models/types';
+import { formatDate } from '../../utils/formatters';
 
 interface PromptCardProps {
   prompt: UserPrompt;

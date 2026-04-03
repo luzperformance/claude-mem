@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Observation } from '../types';
-import { formatDate } from '../utils/formatters';
+import { Observation } from '../../models/types';
+import { formatDate } from '../../utils/formatters';
 
 interface ObservationCardProps {
   observation: Observation;

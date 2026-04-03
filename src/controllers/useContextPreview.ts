@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import type { Settings } from '../types';
+import type { Settings } from '../models/types';
 
 interface UseContextPreviewResult {
   preview: string;

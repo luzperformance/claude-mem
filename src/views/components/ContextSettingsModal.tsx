@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import type { Settings } from '../types';
+import type { Settings } from '../../models/types';
 import { TerminalPreview } from './TerminalPreview';
-import { useContextPreview } from '../hooks/useContextPreview';
+import { useContextPreview } from '../../controllers/useContextPreview';
 
 interface ContextSettingsModalProps {
   isOpen: boolean;

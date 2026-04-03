@@ -1,6 +1,6 @@
 import React from "react";
 import { Summary } from "../types";
-import { formatDate } from "../utils/formatters";
+import { formatDate } from "../../utils/formatters";
 
 interface SummaryCardProps {
   summary: Summary;

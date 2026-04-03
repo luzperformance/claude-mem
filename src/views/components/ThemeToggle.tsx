@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemePreference } from '../hooks/useTheme';
+import { ThemePreference } from '../../controllers/useTheme';
 
 interface ThemeToggleProps {
   preference: ThemePreference;

@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import { Header } from './components/Header';
-import { Feed } from './components/Feed';
-import { ContextSettingsModal } from './components/ContextSettingsModal';
-import { LogsDrawer } from './components/LogsModal';
-import { useSSE } from './hooks/useSSE';
-import { useSettings } from './hooks/useSettings';
-import { useStats } from './hooks/useStats';
-import { usePagination } from './hooks/usePagination';
-import { useTheme } from './hooks/useTheme';
-import { Observation, Summary, UserPrompt } from './types';
-import { mergeAndDeduplicateByProject } from './utils/data';
+import { Header } from '../components/Header';
+import { Feed } from '../components/Feed';
+import { ContextSettingsModal } from '../components/ContextSettingsModal';
+import { LogsDrawer } from '../components/LogsModal';
+import { useSSE } from '../../controllers/useSSE';
+import { useSettings } from '../../controllers/useSettings';
+import { useStats } from '../../controllers/useStats';
+import { usePagination } from '../../controllers/usePagination';
+import { useTheme } from '../../controllers/useTheme';
+import { Observation, Summary, UserPrompt } from '../../models/types';
+import { mergeAndDeduplicateByProject } from '../../utils/data';
 
 export function App() {
   const [currentFilter, setCurrentFilter] = useState('');

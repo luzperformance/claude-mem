@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef } from 'react';
-import { Observation, Summary, UserPrompt } from '../types';
+import { Observation, Summary, UserPrompt } from '../models/types';
 import { UI } from '../constants/ui';
 import { API_ENDPOINTS } from '../constants/api';
 

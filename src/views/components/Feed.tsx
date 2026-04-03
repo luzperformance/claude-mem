@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, useEffect } from 'react';
-import { Observation, Summary, UserPrompt, FeedItem } from '../types';
+import { Observation, Summary, UserPrompt, FeedItem } from '../../models/types';
 import { ObservationCard } from './ObservationCard';
 import { SummaryCard } from './SummaryCard';
 import { PromptCard } from './PromptCard';
