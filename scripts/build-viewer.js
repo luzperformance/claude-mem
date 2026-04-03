@@ -15,7 +15,7 @@ async function buildViewer() {
   try {
     // Build React app
     await esbuild.build({
-      entryPoints: [path.join(rootDir, 'src/ui/viewer/index.tsx')],
+      entryPoints: [path.join(rootDir, 'src/index.tsx')],
       bundle: true,
       minify: true,
       sourcemap: false,
@@ -43,7 +43,7 @@ async function buildViewer() {
     );
 
     // Copy font assets
-    const fontsDir = path.join(rootDir, 'src/ui/viewer/assets/fonts');
+    const fontsDir = path.join(rootDir, 'src/assets/fonts');
     const outputFontsDir = path.join(rootDir, 'plugin/ui/assets/fonts');
 
     if (fs.existsSync(fontsDir)) {
